@@ -9,21 +9,59 @@
 /* Begin PBXBuildFile section */
 		56A45F852BA1B31A00E2B5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F842BA1B31A00E2B5FB /* AppDelegate.swift */; };
 		56A45F872BA1B31A00E2B5FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F862BA1B31A00E2B5FB /* SceneDelegate.swift */; };
-		56A45F892BA1B31A00E2B5FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F882BA1B31A00E2B5FB /* ViewController.swift */; };
+		56A45F892BA1B31A00E2B5FB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F882BA1B31A00E2B5FB /* MainView.swift */; };
 		56A45F8C2BA1B31A00E2B5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A45F8A2BA1B31A00E2B5FB /* Main.storyboard */; };
 		56A45F8E2BA1B31D00E2B5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A45F8D2BA1B31D00E2B5FB /* Assets.xcassets */; };
 		56A45F912BA1B31D00E2B5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A45F8F2BA1B31D00E2B5FB /* LaunchScreen.storyboard */; };
+		56A45F992BA1B94600E2B5FB /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F982BA1B94600E2B5FB /* PlanView.swift */; };
+		56A45F9F2BA1BF0C00E2B5FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F9E2BA1BF0C00E2B5FB /* DetailView.swift */; };
+		56A45FA42BA1C0FA00E2B5FB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */; };
+		56A45FA62BA1C10700E2B5FB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */; };
+		56A45FA82BA1C10F00E2B5FB /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */; };
+		56A45FAA2BA1C16600E2B5FB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA92BA1C16600E2B5FB /* Repository.swift */; };
+		56A45FAC2BA1C17500E2B5FB /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FAB2BA1C17500E2B5FB /* Entity.swift */; };
+		56A45FBB2BA1C32900E2B5FB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FB02BA1C32800E2B5FB /* FMDatabaseQueue.m */; };
+		56A45FBC2BA1C32900E2B5FB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FB12BA1C32800E2B5FB /* FMResultSet.m */; };
+		56A45FBD2BA1C32900E2B5FB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FB22BA1C32800E2B5FB /* FMDatabase.m */; };
+		56A45FBE2BA1C32900E2B5FB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FB92BA1C32900E2B5FB /* FMDatabasePool.m */; };
+		56A45FBF2BA1C32900E2B5FB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FBA2BA1C32900E2B5FB /* FMDatabaseAdditions.m */; };
+		56A45FC12BA1C37400E2B5FB /* todo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 56A45FC02BA1C37400E2B5FB /* todo.sqlite */; };
+		56A45FCE2BA1C40300E2B5FB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 56A45FCD2BA1C40300E2B5FB /* RxCocoa */; };
+		56A45FD42BA1C40300E2B5FB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 56A45FD32BA1C40300E2B5FB /* RxSwift */; };
+		56A45FDC2BA1C64F00E2B5FB /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FDB2BA1C64F00E2B5FB /* ToDoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56A45F812BA1B31A00E2B5FB /* ToDoList-sqlite(Work).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDoList-sqlite(Work).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A45F842BA1B31A00E2B5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A45F862BA1B31A00E2B5FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56A45F882BA1B31A00E2B5FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56A45F882BA1B31A00E2B5FB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		56A45F8B2BA1B31A00E2B5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A45F8D2BA1B31D00E2B5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A45F902BA1B31D00E2B5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A45F922BA1B31D00E2B5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A45F982BA1B94600E2B5FB /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		56A45F9E2BA1BF0C00E2B5FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		56A45FA92BA1C16600E2B5FB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		56A45FAB2BA1C17500E2B5FB /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		56A45FAE2BA1C2EB00E2B5FB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		56A45FAF2BA1C32800E2B5FB /* ToDoList-sqlite(Work)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList-sqlite(Work)-Bridging-Header.h"; sourceTree = "<group>"; };
+		56A45FB02BA1C32800E2B5FB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		56A45FB12BA1C32800E2B5FB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		56A45FB22BA1C32800E2B5FB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		56A45FB32BA1C32900E2B5FB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		56A45FB42BA1C32900E2B5FB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		56A45FB52BA1C32900E2B5FB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		56A45FB62BA1C32900E2B5FB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		56A45FB72BA1C32900E2B5FB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		56A45FB82BA1C32900E2B5FB /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		56A45FB92BA1C32900E2B5FB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		56A45FBA2BA1C32900E2B5FB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		56A45FC02BA1C37400E2B5FB /* todo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = todo.sqlite; sourceTree = SOURCE_ROOT; };
+		56A45FDB2BA1C64F00E2B5FB /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A45FD42BA1C40300E2B5FB /* RxSwift in Frameworks */,
+				56A45FCE2BA1C40300E2B5FB /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +82,7 @@
 			children = (
 				56A45F832BA1B31A00E2B5FB /* ToDoList-sqlite(Work) */,
 				56A45F822BA1B31A00E2B5FB /* Products */,
+				56A45FAD2BA1C2EA00E2B5FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +99,82 @@
 			children = (
 				56A45F842BA1B31A00E2B5FB /* AppDelegate.swift */,
 				56A45F862BA1B31A00E2B5FB /* SceneDelegate.swift */,
-				56A45F882BA1B31A00E2B5FB /* ViewController.swift */,
+				56A45F9A2BA1BECF00E2B5FB /* Model */,
+				56A45F9B2BA1BED300E2B5FB /* View */,
+				56A45F9C2BA1BEE000E2B5FB /* ViewModel */,
+				56A45F9D2BA1BEED00E2B5FB /* Data */,
 				56A45F8A2BA1B31A00E2B5FB /* Main.storyboard */,
 				56A45F8D2BA1B31D00E2B5FB /* Assets.xcassets */,
 				56A45F8F2BA1B31D00E2B5FB /* LaunchScreen.storyboard */,
 				56A45F922BA1B31D00E2B5FB /* Info.plist */,
+				56A45FB72BA1C32900E2B5FB /* FMDatabase.h */,
+				56A45FB22BA1C32800E2B5FB /* FMDatabase.m */,
+				56A45FB32BA1C32900E2B5FB /* FMDatabaseAdditions.h */,
+				56A45FBA2BA1C32900E2B5FB /* FMDatabaseAdditions.m */,
+				56A45FB62BA1C32900E2B5FB /* FMDatabasePool.h */,
+				56A45FB92BA1C32900E2B5FB /* FMDatabasePool.m */,
+				56A45FB42BA1C32900E2B5FB /* FMDatabaseQueue.h */,
+				56A45FB02BA1C32800E2B5FB /* FMDatabaseQueue.m */,
+				56A45FB82BA1C32900E2B5FB /* FMDB.h */,
+				56A45FB52BA1C32900E2B5FB /* FMResultSet.h */,
+				56A45FB12BA1C32800E2B5FB /* FMResultSet.m */,
+				56A45FAF2BA1C32800E2B5FB /* ToDoList-sqlite(Work)-Bridging-Header.h */,
+				56A45FC02BA1C37400E2B5FB /* todo.sqlite */,
 			);
 			path = "ToDoList-sqlite(Work)";
+			sourceTree = "<group>";
+		};
+		56A45F9A2BA1BECF00E2B5FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FAB2BA1C17500E2B5FB /* Entity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A45F9B2BA1BED300E2B5FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FA02BA1C02E00E2B5FB /* TableView */,
+				56A45F882BA1B31A00E2B5FB /* MainView.swift */,
+				56A45F9E2BA1BF0C00E2B5FB /* DetailView.swift */,
+				56A45F982BA1B94600E2B5FB /* PlanView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56A45F9C2BA1BEE000E2B5FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */,
+				56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */,
+				56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56A45F9D2BA1BEED00E2B5FB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FA92BA1C16600E2B5FB /* Repository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		56A45FA02BA1C02E00E2B5FB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FDB2BA1C64F00E2B5FB /* ToDoTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		56A45FAD2BA1C2EA00E2B5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56A45FAE2BA1C2EB00E2B5FB /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +193,10 @@
 			dependencies = (
 			);
 			name = "ToDoList-sqlite(Work)";
+			packageProductDependencies = (
+				56A45FCD2BA1C40300E2B5FB /* RxCocoa */,
+				56A45FD32BA1C40300E2B5FB /* RxSwift */,
+			);
 			productName = "ToDoList-sqlite(Work)";
 			productReference = 56A45F812BA1B31A00E2B5FB /* ToDoList-sqlite(Work).app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +213,7 @@
 				TargetAttributes = {
 					56A45F802BA1B31A00E2B5FB = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -111,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 56A45F782BA1B31A00E2B5FB;
+			packageReferences = (
+				56A45FC22BA1C3AB00E2B5FB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 56A45F822BA1B31A00E2B5FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A45F912BA1B31D00E2B5FB /* LaunchScreen.storyboard in Resources */,
+				56A45FC12BA1C37400E2B5FB /* todo.sqlite in Resources */,
 				56A45F8E2BA1B31D00E2B5FB /* Assets.xcassets in Resources */,
 				56A45F8C2BA1B31A00E2B5FB /* Main.storyboard in Resources */,
 			);
@@ -138,9 +257,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A45F892BA1B31A00E2B5FB /* ViewController.swift in Sources */,
+				56A45FA42BA1C0FA00E2B5FB /* MainViewModel.swift in Sources */,
+				56A45F892BA1B31A00E2B5FB /* MainView.swift in Sources */,
 				56A45F852BA1B31A00E2B5FB /* AppDelegate.swift in Sources */,
+				56A45FBD2BA1C32900E2B5FB /* FMDatabase.m in Sources */,
+				56A45FA82BA1C10F00E2B5FB /* PlanDetailView.swift in Sources */,
+				56A45FBB2BA1C32900E2B5FB /* FMDatabaseQueue.m in Sources */,
+				56A45FBF2BA1C32900E2B5FB /* FMDatabaseAdditions.m in Sources */,
+				56A45FBE2BA1C32900E2B5FB /* FMDatabasePool.m in Sources */,
+				56A45FBC2BA1C32900E2B5FB /* FMResultSet.m in Sources */,
 				56A45F872BA1B31A00E2B5FB /* SceneDelegate.swift in Sources */,
+				56A45F9F2BA1BF0C00E2B5FB /* DetailView.swift in Sources */,
+				56A45FDC2BA1C64F00E2B5FB /* ToDoTableViewCell.swift in Sources */,
+				56A45FAC2BA1C17500E2B5FB /* Entity.swift in Sources */,
+				56A45FAA2BA1C16600E2B5FB /* Repository.swift in Sources */,
+				56A45F992BA1B94600E2B5FB /* PlanView.swift in Sources */,
+				56A45FA62BA1C10700E2B5FB /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7C94QN45FD;
@@ -308,6 +441,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DwozStudio.ToDoList-sqlite-Work-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList-sqlite(Work)/ToDoList-sqlite(Work)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7C94QN45FD;
@@ -336,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DwozStudio.ToDoList-sqlite-Work-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList-sqlite(Work)/ToDoList-sqlite(Work)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +500,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56A45FC22BA1C3AB00E2B5FB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56A45FCD2BA1C40300E2B5FB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56A45FC22BA1C3AB00E2B5FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		56A45FD32BA1C40300E2B5FB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56A45FC22BA1C3AB00E2B5FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56A45F792BA1B31A00E2B5FB /* Project object */;
 }
