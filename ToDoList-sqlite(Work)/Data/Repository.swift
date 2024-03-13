@@ -21,6 +21,30 @@ class Repository{
     }
     
     
+    func deletePlan(plan_id:Int){
+        db?.open()
+        
+        do {
+            try db?.executeUpdate("DELETE FROM plans WHERE plan_id = ? ", values: [plan_id])
+            planUpload()
+        } catch  {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    
+    func updatePlan(plan_name:String,plan_id:Int){
+        
+        db?.open()
+        do {
+            try db?.executeUpdate("UPDATE plans SET plan_name = ? WHERE plan_id = ?", values: [plan_name,plan_id])
+        } catch  {
+            print(error.localizedDescription)
+        }
+        
+        
+        db?.close()
+    }
     
     
     

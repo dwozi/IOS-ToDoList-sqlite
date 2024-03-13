@@ -9,4 +9,10 @@ import Foundation
 
 class DetailViewModel{
     
+    var planRepo = Repository()
+    
+    
+    func updatePlan(plan_name:String,plan_id:Int){
+        planRepo.updatePlan(plan_name: plan_name, plan_id: plan_id)
+    }
 }

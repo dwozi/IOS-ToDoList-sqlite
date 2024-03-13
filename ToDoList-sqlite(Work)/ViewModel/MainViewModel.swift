@@ -21,6 +21,10 @@ class MainViewModel{
 
     }
     
+    func deletePlan(plan_id:Int){
+        planRepo.deletePlan(plan_id: plan_id)
+    }
+    
     
     
     func planUpload(){

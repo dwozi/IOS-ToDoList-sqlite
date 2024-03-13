@@ -49,15 +49,36 @@ extension MainView : UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        tableView.deselectRow(at: indexPath, animated: true)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailVC"{
+            if let plan = sender as? Entity{
+                let destination = segue.destination as! DetailView
+                destination.plan = plan
+            }
+        }
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let data = list[indexPath.row]
+        performSegue(withIdentifier: "detailVC", sender: data)
+    }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAct = UIContextualAction(style: .destructive, title: "Delete") { uicontextualaction, view, bool in
+          
+            let plan = self.list[indexPath.row]
+            let alert = UIAlertController(title: "Delete To Do", message: "Are you sure to delete?", preferredStyle: .actionSheet)
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive){ _ in
+                self.mainVM.deletePlan(plan_id: plan.plan_id!)
+            }
+            alert.addAction(deleteAction)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true)
+        }
         
-        return UISwipeActionsConfiguration()
+        return UISwipeActionsConfiguration(actions: [deleteAct])
         
     }
 }
