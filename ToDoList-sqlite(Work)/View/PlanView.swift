@@ -12,6 +12,8 @@ class PlanView: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
+    var viewModel = PlanViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,11 @@ class PlanView: UIViewController {
 
   
     @IBAction func addClick(_ sender: Any) {
+        
+        if let plan = textField.text{
+            viewModel.savePlan(plan_name: plan)
+            navigationController?.popViewController(animated: true)
+        }
     }
     
 }

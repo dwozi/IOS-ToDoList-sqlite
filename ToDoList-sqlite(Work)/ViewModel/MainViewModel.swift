@@ -6,12 +6,26 @@
 //
 
 import Foundation
-
+import RxSwift
 class MainViewModel{
+  
+    var planRepo = Repository()
+    var planList = BehaviorSubject<[Entity]>(value: [Entity]())
+    
+    
+    init(){
+        
+        dataBaseCopy()
+        planList = planRepo.planRepo
+        planUpload()
+
+    }
     
     
     
-    
+    func planUpload(){
+        planRepo.planUpload()
+    }
     
     
     

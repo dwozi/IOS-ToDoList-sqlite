@@ -15,7 +15,7 @@ class Entity{
         
     }
     
-    init(plan_id: Int? = nil, plan_name: String? = nil) {
+    init(plan_id: Int, plan_name: String) {
         self.plan_id = plan_id
         self.plan_name = plan_name
     }

@@ -17,7 +17,7 @@
 		56A45F9F2BA1BF0C00E2B5FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45F9E2BA1BF0C00E2B5FB /* DetailView.swift */; };
 		56A45FA42BA1C0FA00E2B5FB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */; };
 		56A45FA62BA1C10700E2B5FB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */; };
-		56A45FA82BA1C10F00E2B5FB /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */; };
+		56A45FA82BA1C10F00E2B5FB /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA72BA1C10F00E2B5FB /* PlanViewModel.swift */; };
 		56A45FAA2BA1C16600E2B5FB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FA92BA1C16600E2B5FB /* Repository.swift */; };
 		56A45FAC2BA1C17500E2B5FB /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FAB2BA1C17500E2B5FB /* Entity.swift */; };
 		56A45FBB2BA1C32900E2B5FB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A45FB02BA1C32800E2B5FB /* FMDatabaseQueue.m */; };
@@ -44,7 +44,7 @@
 		56A45F9E2BA1BF0C00E2B5FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		56A45FA72BA1C10F00E2B5FB /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
 		56A45FA92BA1C16600E2B5FB /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		56A45FAB2BA1C17500E2B5FB /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		56A45FAE2BA1C2EB00E2B5FB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -148,7 +148,7 @@
 			children = (
 				56A45FA32BA1C0FA00E2B5FB /* MainViewModel.swift */,
 				56A45FA52BA1C10700E2B5FB /* DetailViewModel.swift */,
-				56A45FA72BA1C10F00E2B5FB /* PlanDetailView.swift */,
+				56A45FA72BA1C10F00E2B5FB /* PlanViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 				56A45F892BA1B31A00E2B5FB /* MainView.swift in Sources */,
 				56A45F852BA1B31A00E2B5FB /* AppDelegate.swift in Sources */,
 				56A45FBD2BA1C32900E2B5FB /* FMDatabase.m in Sources */,
-				56A45FA82BA1C10F00E2B5FB /* PlanDetailView.swift in Sources */,
+				56A45FA82BA1C10F00E2B5FB /* PlanViewModel.swift in Sources */,
 				56A45FBB2BA1C32900E2B5FB /* FMDatabaseQueue.m in Sources */,
 				56A45FBF2BA1C32900E2B5FB /* FMDatabaseAdditions.m in Sources */,
 				56A45FBE2BA1C32900E2B5FB /* FMDatabasePool.m in Sources */,
