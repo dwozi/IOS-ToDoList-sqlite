@@ -19,7 +19,8 @@ class MainView: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
+        searchBar.delegate = self
+    
         _ = mainVM.planList.subscribe(onNext: { list in
             self.list = list
             self.tableView.reloadData()
@@ -29,15 +30,9 @@ class MainView: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         mainVM.planUpload()
     }
-
-
 }
 
-
-
 extension MainView : UITableViewDelegate,UITableViewDataSource{
-    
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -79,7 +74,14 @@ extension MainView : UITableViewDelegate,UITableViewDataSource{
         }
         
         return UISwipeActionsConfiguration(actions: [deleteAct])
-        
+    }
+}
+
+
+
+extension MainView : UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        mainVM.searchBar(searchText: searchText)
     }
 }
 

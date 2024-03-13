@@ -61,6 +61,26 @@ class Repository{
         
     }
     
+    func searchBar(searchText:String){
+        db?.open()
+
+        var planList = [Entity]()
+        do {
+            let result = try db!.executeQuery("SELECT * FROM plans WHERE plan_name like '%\(searchText)%'", values: nil)
+            while result.next(){
+                
+                let plans = Entity(plan_id: Int(result.string(forColumn: "plan_id"))!,
+                                   plan_name: result.string(forColumn: "plan_name")!)
+                planList.append(plans)
+            }
+            planRepo.onNext(planList)
+            
+        } catch  {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    
     
     func planUpload(){
         db?.open()

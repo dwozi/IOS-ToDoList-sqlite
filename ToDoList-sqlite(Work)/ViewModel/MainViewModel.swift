@@ -21,6 +21,11 @@ class MainViewModel{
 
     }
     
+    func searchBar(searchText:String){
+        planRepo.searchBar(searchText: searchText)
+        
+    }
+    
     func deletePlan(plan_id:Int){
         planRepo.deletePlan(plan_id: plan_id)
     }
